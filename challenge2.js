@@ -65,4 +65,9 @@ console.log(oddsSmallerThan(7));
  */
 function squareOrDouble(n) {
   // Your code here
+  if (isOdd(n)){
+    return n*n;
+  }else{
+    return 2*n;
+  }
 }

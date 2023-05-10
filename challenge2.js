@@ -45,13 +45,14 @@ console.log(isOdd(10));
 function oddsSmallerThan(n) {
   // Your code here
   let flag = 0;
-  while(n!==0 && isOdd(n)){
+  let preOdd = n-2;//iterating from the next odd
+  while(preOdd>=1 && isOdd(preOdd)){
     flag++;
-    n=n-2;
+    preOdd=preOdd-2;
   }
   return flag;
 }
-console.log(oddsSmallerThan(7));
+console.log(oddsSmallerThan(15));
 
 /**
  * squareOrDouble(n):
@@ -71,3 +72,4 @@ function squareOrDouble(n) {
     return 2*n;
   }
 }
+console.log(squareOrDouble(3));

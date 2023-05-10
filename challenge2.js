@@ -26,9 +26,8 @@ function isOdd(n) {
   if(n%2!==0){
     return true;
   }
-  else{
     return false;
-  }
+  
 }
 console.log(isOdd(7));
 console.log(isOdd(10));
@@ -64,6 +63,7 @@ console.log(oddsSmallerThan(15));
  * squareOrDouble(16) -> 32
  * squareOrDouble(9) -> 81
  */
+// odd = even - 1;
 function squareOrDouble(n) {
   // Your code here
   if (isOdd(n)){

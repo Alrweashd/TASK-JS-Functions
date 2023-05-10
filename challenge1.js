@@ -33,6 +33,7 @@ printAge(1998);
  */
 function printHello(name, lang){
     let greed;
+    if (lang=="en");
     if (lang=="en"){
         console.log(`Hello ${name}`);
     }else if(lang=="es"){
@@ -84,3 +85,10 @@ console.log(printMax(9,9));
 // let y = 10
 
 // console.log(y.toString(y))
+
+
+const mak = (name) => {
+    return `Dr. ${name}`;
+}; // functiom
+
+const ma = (age) => `Dr. ${age}`

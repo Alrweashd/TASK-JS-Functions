@@ -3,10 +3,8 @@
  * Create a function named `printName`
  * - that just prints your name on the screen
  */
-function printName(){
-    
-    console.log(`My is ur name Turki `);
-}
+
+const printName = () => console.log(`My name is Turki`);
 /**
  * Task 2:
  * Create a function named `printAge`
@@ -16,10 +14,8 @@ function printName(){
  */
 printName();
 
-function printAge(brith_year){
-    let age = 2023 - brith_year;
-    console.log(`I'm ${age} years old`);
-}
+
+const printAge = (brith) => console.log(`I'm ${2023-brith}`);
 printAge(1998);
 /**
  * Task 3:
@@ -32,21 +28,16 @@ printAge(1998);
  * -- tr: it should print `Merhaba NAME`
  */
 function printHello(name, lang){
-    let greed;
-    if (lang=="en");
-    if (lang=="en"){
-        console.log(`Hello ${name}`);
-    }else if(lang=="es"){
-        console.log(`Hola ${name}`);
-    }
-    else if(lang=="fr"){
-        console.log(`Bonjour ${name}`);
-    }
-    else if(lang=="tr"){
-        console.log(`Merhaba ${name}`);
-    }
+    let greet=["Hello","Hola","Bonjour","Merhaba"];
+
+    if (lang=="en") i=0
+    else if(lang=="es") i=1
+    else if(lang=="fr") i=2
+    else if(lang=="tr") i=3
+
+    console.log(`${greet[i]} ${name}`);
 }
-printHello("Turki","en");
+printHello("Turki","tr");
 /**
  * Task 4:
  * Create a function named `printMax`

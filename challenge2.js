@@ -41,6 +41,7 @@ console.log(isOdd(10));
  * oddsSmallerThan(15) -> 7
  */
 function oddsSmallerThan(n) {
+  
   let flag = 0;
   let preOdd = n; //iterating from the next odd
   if (isOdd(preOdd)){
@@ -55,6 +56,11 @@ function oddsSmallerThan(n) {
   }
   return flag;
 }
+
+function oddsSmallerThan_1(n){  //Sayed Mahmood Almohri's solution, NOT Turki
+  return Math.floor(n/2)
+}
+
 console.log(oddsSmallerThan(8));
 
 /**

@@ -54,41 +54,9 @@ printHello("Turki","en");
  * - should print out the bigger number
  */
 function printMax (num1, num2){
-    if(num1>num2){
-        return num1;
-    }
-    else if (num2>num1){
-        return num2;
-    }
-    else{
-        return "they are equall";
-    }
+    if(num1>num2) return num1;
+    else if (num2>num1) return num2;
+    else return "they are equall";
 }
 
 console.log(printMax(9,9));
-
-// function printMaxFun (num1, num2){
-//     //num1=toString(num1);
-//     if(num1.compareTo(num2)){
-//         return num1;
-//     }
-//     else if (num2.compareTo(num1)){
-//         return num2;
-//     }
-//     else{
-//         return "they are equall";
-//     }
-// }
-
-// console.log(printMaxFun(9,9));
-// let x = 9
-// let y = 10
-
-// console.log(y.toString(y))
-
-
-const mak = (name) => {
-    return `Dr. ${name}`;
-}; // functiom
-
-const ma = (age) => `Dr. ${age}`

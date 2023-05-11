@@ -22,7 +22,6 @@ function greet(name) {
  */
 greet("Turki");
 function isOdd(n) {
-  // Your code here
   if(n%2!==0){
     return true;
   }
@@ -42,16 +41,21 @@ console.log(isOdd(10));
  * oddsSmallerThan(15) -> 7
  */
 function oddsSmallerThan(n) {
-  // Your code here
   let flag = 0;
-  let preOdd = n-2;//iterating from the next odd
-  while(preOdd>=1 && isOdd(preOdd)){
+  let preOdd = n; //iterating from the next odd
+  if (isOdd(preOdd)){
+    preOdd=n-2; // to get to the previous odd in case if n is odd
+  } else{
+    preOdd=n-1; // to get to the previous odd in case if n is even
+  }
+
+  while(preOdd>=1){
     flag++;
     preOdd=preOdd-2;
   }
   return flag;
 }
-console.log(oddsSmallerThan(15));
+console.log(oddsSmallerThan(8));
 
 /**
  * squareOrDouble(n):
@@ -63,13 +67,11 @@ console.log(oddsSmallerThan(15));
  * squareOrDouble(16) -> 32
  * squareOrDouble(9) -> 81
  */
-// odd = even - 1;
 function squareOrDouble(n) {
-  // Your code here
   if (isOdd(n)){
     return n*n;
-  }else{
-    return 2*n;
   }
+    return 2*n;
 }
+
 console.log(squareOrDouble(3));
